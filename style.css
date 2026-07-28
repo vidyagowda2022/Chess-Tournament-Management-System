@@ -1,1 +1,148 @@
+*{
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    margin:0;
+    background:#f2f5ff;
+    color:#222;
+}
+
+header{
+    background:#1f3c88;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+header h1{
+    margin:0;
+}
+
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:30px auto;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+
+.box{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+
+h2{
+    color:#1f3c88;
+}
+
+
+input,select{
+    width:100%;
+    padding:10px;
+    margin:8px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+
+button{
+    background:#1f3c88;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+
+button:hover{
+    background:#162d68;
+}
+
+
+ul{
+    padding:0;
+}
+
+
+li{
+    list-style:none;
+    background:#eef2ff;
+    margin:8px 0;
+    padding:10px;
+    border-radius:5px;
+}
+
+
+#matchList div,
+#ranking div,
+#teamList div{
+    background:#f8f8f8;
+    padding:10px;
+    margin:8px 0;
+    border-radius:5px;
+}
+
+#ranking .rank-card{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:#222;
+    font-weight:bold;
+    border-left:6px solid;
+}
+
+#ranking .medal{
+    font-size:24px;
+}
+
+#ranking .red-medal{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:24px;
+    height:24px;
+    border-radius:50%;
+    background:#c0392b;
+    color:white;
+    font-size:14px;
+    font-weight:bold;
+    box-shadow:0 2px 0 #7f1d1d;
+}
+
+#ranking .gold{
+    background:#fff3bf;
+    border-color:#d4a017;
+}
+
+#ranking .silver{
+    background:#f0f0f0;
+    border-color:#9a9a9a;
+}
+
+#ranking .grey{
+    background:#e2e2e2;
+    border-color:#6f6f6f;
+}
+
+#ranking .red{
+    background:#ffe1e1;
+    border-color:#c0392b;
+}
+
+
+@media(max-width:700px){
+
+    .container{
+        grid-template-columns:1fr;
+    }
+
+}
 
