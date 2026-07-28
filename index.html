@@ -1,1 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Tournament Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>♟ Chess Tournament Manager</h1>
+    <p>Manage players, matches and rankings</p>
+</header>
+
+
+<div class="container">
+
+    <!-- Player Section -->
+    <div class="box">
+        <h2>Players</h2>
+
+        <input type="text" id="playerInput" placeholder="Enter player name">
+        <button type="button" onclick="addPlayer()">Add Player</button>
+
+        <ul id="playerList"></ul>
+    </div>
+
+    <!-- Tournament Section -->
+    <div class="box">
+        <h2>Tournaments</h2>
+
+        <input type="text" id="tournamentInput" placeholder="Enter tournament name">
+
+        <button onclick="addTournament()">Create Tournament</button>
+
+        <ul id="tournamentList"></ul>
+    </div>
+
+    <!-- Add Player To Tournament -->
+    <div class="box">
+
+        <h2>select Player</h2>
+
+        <select id="selectPlayer">
+            <option value="" selected disabled>Select Player</option>
+        </select>
+
+
+        <select id="selectTournament">
+            <option value="" selected disabled>Select Tournament</option>
+        </select>
+
+
+        <button onclick="addPlayerTournament()">
+            Add
+        </button>
+
+
+        <div id="teamList"></div>
+
+    </div>
+
+    <!-- Match Section -->
+    <div class="box">
+
+        <h2>Matches</h2>
+
+        <select id="matchTournament">
+            <option value="" selected disabled>Select Tournament</option>
+        </select>
+
+
+        <button onclick="generateMatches()">
+            Generate Matches
+        </button>
+
+
+        <div id="matchList"></div>
+
+    </div>
+
+    <!-- Ranking Section -->
+    <div class="box">
+
+        <h2>Leaderboard</h2>
+
+        <div id="ranking"></div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
 
